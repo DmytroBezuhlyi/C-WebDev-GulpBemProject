@@ -177,6 +177,15 @@ a {
   font-weight: 500;
   color: #ffffff;
 }
+.consultation .error {
+  border: 1px solid red;
+}
+.consultation label.error {
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  margin-bottom: 15px;
+}
 
 .title {
   color: #0d0d0d;
@@ -204,7 +213,6 @@ a {
   margin-bottom: 15px;
   border: none;
   padding: 0 20px;
-  color: #4b4b4b4b;
   font-size: 14px;
   font-weight: 300;
 }
@@ -553,6 +561,14 @@ a {
 }
 .modal_mini {
   min-height: 140px;
+}
+.modal .error {
+  border: 1px solid red;
+}
+.modal label.error {
+  border: none;
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 #consultation, #order, #thanks {

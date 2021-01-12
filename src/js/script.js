@@ -56,4 +56,39 @@ $(document).ready(function () {
             $('.overlay, #order').fadeIn('slow');
         })
     })
+
+    // Form validation
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: 'Please specify your name',
+                    minLength: jQuery.validator.format('At least {0} characters required!')
+                },
+                phone: 'Please specify your phone number',
+                email: {
+                    required: 'Please specify your email address',
+                    email: 'Your email address must be in the format of name@domain.com'
+                }
+            }
+        });
+    }
+
+    validateForms('#consultation-form');
+    validateForms('#order form');
+    validateForms('#consultation form');
+
+    // Mask
+    $('input[name=phone]').mask("+38 (999) 999-99-99");
 });
