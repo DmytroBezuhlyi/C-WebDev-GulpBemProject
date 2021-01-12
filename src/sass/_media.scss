@@ -103,6 +103,9 @@
     &_main {
       margin-top: 45px;
     }
+    &_submit {
+      font-size: 14px;
+    }
   }
 
   .consultation {
@@ -134,12 +137,35 @@
       margin-top: 30px;
     }
   }
+
+  .modal {
+    min-height: 375px;
+    padding: 30px;
+    .feed-form {
+      width: 275px;
+      input {
+        font-size: 13px;
+      }
+    }
+    &__subtitle {
+      font-size: 16px;
+    }
+    &__description {
+      font-size: 13px;
+    }
+  }
 }
 
 @media (max-width: 425px) {
   .header {
+    flex-wrap: wrap;
     &__contacts {
-      display: none;
+      a {
+        display: none;
+      }
+      button {
+        margin-top: 25px;
+      }
     }
   }
 
@@ -176,6 +202,55 @@
     }
     &__item {
       margin-top: 30px;
+    }
+  }
+
+  .modal {
+    min-height: 350px;
+    padding: 25px;
+    .feed-form {
+      width: 250px;
+      input {
+        font-size: 12px;
+      }
+    }
+    &__subtitle {
+      font-size: 15px;
+    }
+    &__description {
+      font-size: 12px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .modal {
+    min-height: 325px;
+    padding: 20px;
+    .feed-form {
+      width: 240px;
+    }
+    &__subtitle {
+      font-size: 14px;
+    }
+    &__close {
+      right: -30px;
+    }
+  }
+}
+
+@media (max-width: 325px) {
+  .modal {
+    min-height: 300px;
+    padding: 20px;
+    .feed-form {
+      width: 230px;
+    }
+    &__description {
+      font-size: 11px;
+    }
+    &__close {
+      right: -25px;
     }
   }
 }
