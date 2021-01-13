@@ -1,5 +1,5 @@
 {
-  "name": "doc-webdev-bootstrapproject",
+  "name": "doc-webdev-gulpbemproject",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,23 +8,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DmytroBezuhlyi/WebDev-BootstrapProject.git"
+    "url": "git+https://github.com/DmytroBezuhlyi/WebDev-GulpBemProject.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DmytroBezuhlyi/WebDev-BootstrapProject/issues"
+    "url": "https://github.com/DmytroBezuhlyi/WebDev-GulpBemProject/issues"
   },
-  "homepage": "https://github.com/DmytroBezuhlyi/WebDev-BootstrapProject#readme",
+  "homepage": "https://github.com/DmytroBezuhlyi/WebDev-GulpBemProject#readme",
   "devDependencies": {
     "browser-sync": "^2.26.13",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-clean-css": "^4.3.0",
     "gulp-cli": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^7.1.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0",
-    "node-sass": "^5.0.0"
-  },
-  "dependencies": {}
+    "gulp-sass": "^4.1.0"
+  }
 }
