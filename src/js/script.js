@@ -89,7 +89,7 @@ $(document).ready(function () {
     validateForms('#order form');
     validateForms('#consultation form');
 
-    // Mask
+    // Mask for phone number
     $('input[name=phone]').mask("+38 (999) 999-99-99");
 
     // Form proceeding
@@ -101,9 +101,27 @@ $(document).ready(function () {
            data: $(this).serialize()
        }).done(function() {
            $(this).find('input').val('');
+            $('#consultation, #order').fadeOut();
+            $('.overlay, #thanks').fadeIn('slow');
 
            $('form').trigger('reset');
        });
        return false;
     });
+
+    // Show/hide pageup button
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    })
+
+    // Smooth scroll to top
+    $("a[href^='#']").click(function() {
+        const _href = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    })
 });
