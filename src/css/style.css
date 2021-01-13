@@ -1,3 +1,14 @@
+@keyframes heartbeat {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 * {
   font-family: "Museo Sans Cyrl", sans-serif;
 }
@@ -164,6 +175,12 @@ a {
 }
 .advantages__item__description span {
   color: #ff0000;
+}
+.advantages__icon_animated {
+  animation: heartbeat 1.5s ease infinite;
+}
+.advantages__icon_animated:hover {
+  animation-play-state: paused;
 }
 
 .consultation {

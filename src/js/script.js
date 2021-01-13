@@ -124,4 +124,10 @@ $(document).ready(function () {
         $('html, body').animate({scrollTop: $(_href).offset().top+"px"});
         return false;
     })
+
+    // Animation
+    let wow = new WOW({
+        animateClass: 'animate__animated'
+    });
+    wow.init();
 });
